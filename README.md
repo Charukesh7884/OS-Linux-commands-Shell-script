@@ -328,14 +328,14 @@ cat > file22
 ``` 
 uniq file22
 ## OUTPUT
-
+![](img/i41.png)
 
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
-
+![](img/i42.png)
 cat < urllist.txt
 ```
 www. yahoo. com
@@ -351,18 +351,18 @@ www. mrcet.... com
  ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
-
+![](img/i43.png)
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
-
+![](img/i45.png)
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-
+![](img/i46.png)
 
 mkdir backupdir
  
@@ -370,19 +370,19 @@ mv backup.tar backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
-
+![](img/i47.png)
 
 tar -xvf backup.tar
 ## OUTPUT
-
+![](img/i48.png)
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
- 
+![](img/i49.png)
 gunzip backup.tar.gz
 ## OUTPUT
-
+![](img/i50.png)
  
 # Shell Script
 ```
@@ -392,7 +392,7 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
-
+![](img/i51.png)
  
 cat << stop > herecheck.txt
 ```
@@ -404,7 +404,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
-
+![](img/i52.png)
 
 cat < scriptest.sh 
 ```bash
@@ -442,11 +442,11 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
-
+![](img/i53.png)
  
 ls file1
 ## OUTPUT
-
+![](img/i54.png)
 echo $?
 ## OUTPUT 
 ./one
@@ -454,12 +454,12 @@ bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
- 
+![](img/i55.png)
 abcd
  
 echo $?
  ## OUTPUT
-
+![](img/i56.png)
 
  
 # mis-using string comparisons
@@ -491,14 +491,14 @@ echo "$val1 is less than $val2"
 fi
 ```
 ##OUTPUT
-
+![](img/i57.png)
 
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
-
+![](img/i58.png)
 
 # check file ownership
 cat < psswdperm.sh 
@@ -525,7 +525,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
-
+![](img/i59.png)
 # check if with file location
 cat>ifnested.sh 
 ```bash
@@ -571,7 +571,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
-
+![](img/i62.png)
 
 
 # using numeric test comparisons
@@ -615,7 +615,7 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
-
+![](img/i61.png)
 # check if a file
 cat > ifnested.sh 
 ```bash
@@ -664,7 +664,7 @@ $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
 ##OUTPUT
-
+1[](img/i60.png)
 # looking for a possible value using elif
 cat elifcheck.sh 
 ```bash
@@ -692,7 +692,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
-
+![](img/i63.png)
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -708,7 +708,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
-
+![](img/i64.png)
 # using the case command
 cat >casecheck.sh 
 ```bash
@@ -742,6 +742,9 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
+
+## OUTPUT
+![](img/i66.png)
  
  
 cat untiltest.sh 
@@ -756,8 +759,10 @@ done
 ``` 
 $ chmod 755 untiltest.sh
  
+  ./untiltest.sh
  
- 
+## OUTPUT
+![](img/i67.png)
 cat forin1.sh 
 ```bash
 \#!/bin/bash
@@ -770,7 +775,10 @@ done
  
 $ chmod 755 forin1.sh
  
- 
+ ./forin1.sh
+
+ ## OUTPUT
+ ![](img/i71.png)
 cat forin2.sh 
 ```bash
 \#!/bin/bash
@@ -795,6 +803,9 @@ done
 $ chmod 755 forin2.sh
  
 $ ./forin2.sh 
+
+## OUTPUT
+![](img/i69.png)
  
 cat forin3.sh 
 ```bash
@@ -807,6 +818,10 @@ done
 ```
 $ ./forin3.sh 
  
+$ ./forin3.sh 
+
+## OUTPUT
+![](f/imG/i70.png)
 cat forin1.sh 
 ```bash
 #!/bin/bash
@@ -819,6 +834,7 @@ done
 $ chmod 755 forin1.sh
 
 ## OUTPUT
+![](img/i71.png)
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -840,7 +856,7 @@ Bhadrachalam
 Khammam
 
 ## OUTPUT
-
+![](img/i72.png)
 
 cat forctype.sh 
 ```bash
@@ -854,7 +870,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
-
+![](img/i73.png)
 cat forctype1.sh 
 ```bash
 #!/bin/bash
@@ -867,7 +883,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
-
+![](img/i74.png)
 cat fornested1.sh 
 ```bash
 #!/bin/bash
@@ -885,7 +901,7 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
-
+![](img/i75.png)
  
 cat forbreak.sh 
 ```bash
@@ -901,12 +917,13 @@ echo "Iteration number: $var1"
 done
 echo "The for loop is completed“
 ```
-## OUTPUT
 
 $ chmod 755 forbreak.sh
  
 $ ./forbreak.sh 
  
+## OUTPUT
+![](img/i76.png)
 cat forbreak.sh 
 ```bash
 #!/bin/bash
@@ -927,7 +944,7 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
- 
+ ![](img/i77.png)
 cat exread.sh 
 ```bash
 #!/bin/bash
@@ -941,7 +958,7 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
-
+![](img/i78.png)
 
  cat exread1.sh
 ```bash
@@ -952,12 +969,12 @@ echo "Hello $name, welcome to my program. “
 ``` 
 $ chmod 755 exread1.sh 
 
+$ ./exread1.sh
+
 ## OUTPUT
+![](img/i79.png)
 
 
-
-$ ./exread1.sh 
- 
 cat funcex.sh
 ```bash
 #!/bin/bash
@@ -975,10 +992,10 @@ fi
 ```
 ## OUTPUT
  ./funcex.sh 
+![](img/i80.png)
 
- 
  ./funcex.sh 1 2
-
+![](img/00000.png)
  
 cat argshift.sh
 ```bash
@@ -992,7 +1009,7 @@ $ chmod 777 argshift.sh
 
 ## OUTPUT
 $ ./argshift.sh 1 2 3
- 
+ ![](img/i81.png)
  cat argshift1.sh
 ```bash
  #/bin/bash 
