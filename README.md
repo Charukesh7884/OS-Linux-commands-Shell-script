@@ -49,14 +49,14 @@ cat < file2
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+![](img/i3.png )
 comm file1 file2
  ## OUTPUT
-
+![](img/i4.png )
  
 diff file1 file2
 ## OUTPUT
-
+![](img/i5.png )
 
 #Filters
 
@@ -79,18 +79,16 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
-
-
-
+![](img/i6.png )
 
 cut -d "|" -f 1 file22
 ## OUTPUT
-
+![](img/i7.png )
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
-
+![](img/i8.png )
 
 cat < newfile 
 ```
@@ -104,7 +102,7 @@ hello world
  
 grep Hello newfile 
 ## OUTPUT
-
+![](img/i8.png)
 
 
 grep hello newfile 
@@ -115,29 +113,29 @@ grep hello newfile
 
 grep -v hello newfile 
 ## OUTPUT
-
+![](img/i9.png)
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
-
+![](img/i10.png)
 
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
-
+![](img/i11.png)
 
 
 
 grep -R ubuntu /etc
 ## OUTPUT
-
+![](img/i12.png)
 
 
 grep -w -n world newfile   
 ## OUTPUT
-
+![](img/i13.png)
 
 cat < newfile 
 ```
@@ -160,60 +158,60 @@ Linux is best in this World
  ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
-
+![](img/i14.png)
 
 
 egrep -w '(H|h)ello' newfile 
-## OUTPUT
-
+## OUTPUTegrep
+![](img/i00.png)
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
-
+![](img/i15.png)
 
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
-
+![](img/i16.png)
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
-
+![](img/i000.png)
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
-
+![](img/i17.png)
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
-
+![](img/i18.png)
 
 
 egrep '[1-9]' newfile 
 ## OUTPUT
-
+![](img/i19.png)
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
-
+![](img/i21.png)
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
-
+![](img/i20.png)
 
 egrep l{2} newfile
 ## OUTPUT
-
+![](img/i22.png)
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
-
+![](img/i23.png)
 
 cat > file23
 ```
@@ -231,80 +229,80 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
-
+![](img/i24.png)
 
 
 sed -n -e '$p' file23
 ## OUTPUT
-
+![](img/i25.png)
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
-
+![](img/i26.png)
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
-
+![](img/i27.png)
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
-
+![](img/i28.png)
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
-
+![](img/i29.png)
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
-
+![](img/i30.png)
 
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
-
+![](img/i31.png)
 
 
 seq 10 
 ## OUTPUT
-
+![](img/i32.png)
 
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
-
+![](img/i34.png)
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
-
+![](/img/i33.png)
 
 
 seq 3 | sed '2a hello'
 ## OUTPUT
-
+![](img/i35.png)
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
-
+![](img/i36.png)
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
-
+![](img/i37.png)
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
-
+![](img/i38.png)
 
 
 sed -n '2,4{s/$/*/;p}' file23
-
+![](img/i39.png)
 
 #Sorting File content
 cat > file21
@@ -317,7 +315,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
-
+![](img/i40.png)
 
 cat > file22
 ```
